@@ -12,7 +12,7 @@
 exec 1> >(exec logger -p user.info -t "<%= ::File.basename(@bin) %>")
 exec 2> >(exec logger -p user.err  -t "<%= ::File.basename(@bin) %>")
 <%- end -%>
-<%- end -%>
+
 # mesos binary configuration
 exec <%= @bin %> \
 <%- @flags.sort.each do |flag, value|                                      -%>
