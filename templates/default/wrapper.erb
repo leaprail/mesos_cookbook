@@ -5,7 +5,7 @@
 <%= @env.map{|k,v| "#{k}=\"#{v}\""}.join("\n") %>
 
 # set ulimit if defined
-[[ ! ${ULIMIT:-} ]] || ulimit $ULIMIT
+#[[ ! ${ULIMIT:-} ]] || ulimit $ULIMIT
 
 <%- if @syslog -%>
 # stdout and stderr to syslog
