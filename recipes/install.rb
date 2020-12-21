@@ -17,7 +17,8 @@
 # limitations under the License.
 #
 
-include_recipe 'java'
+# assume java is installed
+# include_recipe 'java'
 
 #
 # Install default repos
