@@ -32,7 +32,7 @@ include_recipe 'mesos::repo' if node['mesos']['repo']
 
 case node['platform_family']
 when 'debian'
-  %w(unzip default-jre-headless libcurl3 libsvn1).each do |pkg|
+  %w(unzip libcurl4 libsvn1).each do |pkg|
     package pkg do
       action :install
     end
